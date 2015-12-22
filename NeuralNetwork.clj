@@ -64,7 +64,16 @@
               weights
             :else nil))))
 
+;;USE EXAMPLE
+(def rand-weights (rand-neural-weights [2 3 2]))
+(def test-network (neural-network sigmoid rand-weights))
 
+(map println 
+     (test-network :weights))
+   
+(test-network :eval [1 1])
+
+;;this doesn't work yet!!
 (defn sigmoid-deriv [x] (* x (- 1 x)))
 
 (defn error
@@ -84,9 +93,5 @@
          deriv   (network :deriv)]
      (reductions #(error deriv %1 %2) )
      ))
-;;USE EXAMPLE
-(def rand-weights (rand-neural-weights [2 3 2]))
-(def test-network (neural-network sigmoid rand-weights))
-(map println (test-network :weights))
-(test-network :eval [1 1])
+
 
