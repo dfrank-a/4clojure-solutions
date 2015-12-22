@@ -1,0 +1,17 @@
+100 	 merge 	3.364	pass
+1000 	 merge 	10.714	pass
+10000 	 merge 	87.331	pass
+50000 	 merge 	486.62	pass
+100000 	 merge 	1140.956	pass
+
+100 	 merge_i 	1.352	pass
+1000 	 merge_i 	37.765	pass
+10000 	 merge_i 	138.018	pass
+50000 	 merge_i 	914.272	pass
+100000 	 merge_i 	2030.737	pass
+
+100 	 merge_p 	24.345	pass
+1000 	 merge_p 	4.781	pass
+10000 	 merge_p 	234.075	pass
+50000 	 merge_p 	343.179	pass
+100000 	 merge_p 	814.783	pass
